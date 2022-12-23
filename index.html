@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Karol Kołodziejczyk">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="wisielec-logo.png">
+
+    <title>Wisielec</title>
+</head>
+
+<body> 
+    <div class="start" onclick="start_poczatek()">ROZPOCZNIJ GRE</div>
+    <div class="top">
+        <div class="kategoria">
+            <h2>KATEGORIA: <div class="kategoria-value"></div>
+            </h2>
+        </div>
+        <div class="haslo">
+            <h2>HASLO: </h2>
+        </div>
+        <div class="bledy">
+            <p>BLEDY <span>0/12</span></p>
+        </div>
+    </div>
+    <div class="alfabet">
+        <button value="a" id="a">A</button>
+        <button value="ą" id="ą">Ą</button>
+        <button value="b" id="b">B</button>
+        <button value="c" id="c">C</button>
+        <button value="ć" id="ć">Ć</button>
+        <button value="d" id="d">D</button>
+        <button value="e" id="e">E</button>
+        <button value="ę" id="ę">Ę</button>
+        <button value="f" id="f">F</button>
+        <button value="g" id="g">G</button>
+        <button value="h" id="h">H</button>
+        <button value="i" id="i">I</button>
+        <button value="j" id="j">J</button>
+        <button value="k" id="k">K</button>
+        <button value="l" id="l">L</button>
+        <button value="ł" id="ł">Ł</button>
+        <button value="m" id="m">M</button>
+        <button value="n" id="n">N</button>
+        <button value="ń" id="ń">Ń</button>
+        <button value="o" id="o">O</button>
+        <button value="ó" id="ó">Ó</button>
+        <button value="p" id="p">P</button>
+        <button value="q" id="q">Q</button>
+        <button value="r" id="r">R</button>
+        <button value="s" id="s">S</button>
+        <button value="ś" id="ś">Ś</button>
+        <button value="t" id="t">T</button>
+        <button value="u" id="u">U</button>
+        <button value="w" id="w">W</button>
+        <button value="v" id="v">V</button>
+        <button value="x" id="x">X</button>
+        <button value="y" id="y">Y</button>
+        <button value="z" id="z">Z</button>
+        <button value="ź" id="ź">Ź</button>
+        <button value="ż" id="ż">Ż</button>
+    </div>
+    <div class="dane">
+        <label for="kategoria" class="in-dane">PODAJ KATEGORIE</label>
+        <input spellcheck="false" type="text" name="kategoria" id="kategoria" placeholder="np. Sport" class="in-dane"
+            autocomplete="off">
+        <label for="kategoria" class="in-dane">I HASLO</label>
+        <input spellcheck="false" type="text" name="haslo" id="haslo" placeholder="np. Pilka nozna" class="in-dane"
+            autocomplete="off">
+        <button class="in-dane" onclick="start()">GOTOWE</button>
+    </div>    
+    <div class="wisielec">
+        <section>
+            <div class="part-1"></div>
+            <div class="part-2"></div>
+            <div class="part-3"></div>
+            <div class="part-4"></div>
+            <div class="part-5"></div>
+            <div class="part-6"></div>
+            <div class="part-7"></div>
+            <div class="part-8"></div>
+            <div class="part-9"></div>
+            <div class="part-10"></div>
+            <div class="part-11"></div>
+            <div class="part-12"></div>
+        </section>
+    </div>
+    <div class="result">
+        <div class="win">
+            <h2>WYGRALES/AS!</h2>
+            <button onclick="document.location.reload(true)">RESTART</button>
+        </div>
+        <div class="lose">
+            <h2>PRZEGRALES/AS</h2>
+            <h3>HASLO TO: <span></span></h3>
+            <button onclick="document.location.reload(true)">RESTART</button>
+        </div>
+    </div>
+</body>
+
+</html>

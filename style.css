@@ -1,0 +1,399 @@
+@import url('https://fonts.cdnfonts.com/css/common-pixel');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Common Pixel', sans-serif;
+    font-weight: normal;
+    font-size: 1rem;
+}
+body{
+    height: 100vh;
+    overflow: hidden;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*START*/
+
+.start{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.2rem;
+    cursor: pointer;
+    animation: anim-poczatek 2s infinite linear;
+    z-index: 2;
+    user-select: none;
+    text-align: center;
+}
+
+/*WISIELEC*/
+
+.wisielec>section{
+    height: 300px;
+    margin: 5px;
+}
+.wisielec{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 320px;
+    height: 330px;
+    transition: 500ms;
+}
+.wisielec div{
+    background-color: rgb(187, 187, 187);
+    width: 5px;
+    position: absolute;
+}
+.part-1{
+    height: 60px;
+    transform: rotate(45deg);
+    bottom: 0;
+    left: 30px;
+    z-index: 12;
+}
+.part-2{
+    height: 60px;
+    transform: rotate(-45deg);
+    bottom: 0;
+    left: 70px;
+    z-index: 11;
+}
+.part-3{
+    height: 265px;
+    bottom: 50px;
+    left: 50px;
+    z-index: 10;
+}
+.part-4{
+    height: 60px;
+    transform: rotate(45deg);
+    bottom: 260px;
+    left: 71px;
+    z-index: 9;
+}
+.part-5{
+    height: 5px;
+    width: 205px !important;
+    bottom: 310px;
+    left: 50px; 
+    z-index: 8;
+}
+.part-6{
+    height: 70px;
+    left: 250px;
+    bottom: 245px;
+    z-index: 6;
+}
+.part-7{
+    width: 50px !important;
+    background-color: transparent;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    bottom: 200px;
+    left: 227px; 
+    z-index: 7;
+}
+.part-8{
+    height: 90px;
+    left: 250px;
+    bottom: 110px;
+    z-index: 5;
+}
+.part-9{
+    height: 60px;
+    transform: rotate(35deg);
+    left: 232px;
+    bottom: 145px;
+    z-index: 4;
+}
+.part-10{
+    height: 60px;
+    transform: rotate(-35deg);
+    left: 268px;
+    bottom: 145px;
+    z-index: 3;
+}
+.part-11{
+    height: 60px;
+    transform: rotate(35deg);
+    left: 233px;
+    bottom: 57px;
+    z-index: 2;
+}
+.part-12{
+    height: 60px;
+    transform: rotate(-35deg);
+    left: 267px;
+    bottom: 57px;
+    z-index: 1;
+}
+.black{
+    background-color: black !important;
+}
+
+/*DANE*/
+
+.dane{
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+.dane>label{
+    font-size: 1.3rem;
+}
+.dane>input{
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: rgb(226, 226, 226);
+    padding: 10px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+}
+.dane>input::placeholder{
+    font-family: 'Common Pixel', sans-serif;
+    font-weight: normal;
+}
+.dane>input:focus{
+    outline: none;
+}
+.dane>button{
+    cursor: pointer;
+    border: 1px solid black;
+    background-color: rgb(226, 226, 226);
+    padding: 10px;
+    font-size: 1.1rem;
+    margin-top: 20px;
+    transition: .3s;
+}
+.dane *{
+    display: none;
+}
+.dane>button:hover{
+    transform: scale(1.03);
+}
+.dane>button:active{
+    transform: scale(1);
+}
+
+/*KATEGORIA HASŁO*/
+
+.top{
+    margin-top: 50px;
+    display: none;
+}
+.top * {
+    font-size: 1.5rem;
+}
+.top > div{
+    margin-top: 30px;
+}
+.top h2{
+    color: rgb(87, 87, 87);
+    
+}
+.top div{
+    color: black;
+}
+.haslo>h2, .kategoria>h2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    max-width: 700px;
+}
+.kategoria div{
+    margin: 0 5px;
+}
+.haslo div{
+    width: 30px;
+    height: 27px;
+    margin: 0 2px;
+    padding-left: 4px;
+    display: grid;
+    place-items: center;
+}
+.haslo-border{
+    border-bottom: 3px solid black;
+}
+.bledy{
+    margin: auto;
+    text-align: center;
+    display: none;
+}
+.bledy *{
+    font-size: 1.3rem;
+    color: rgb(87, 87, 87);
+}
+/*ALFABET*/
+
+.alfabet{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translateY(-50%);
+    border: none;
+    display: none;
+    border: 2px solid;
+    grid-template-columns: repeat(6, 1fr);
+}
+.alfabet>button{
+    border: 2px solid black;
+    width: 40px;
+    aspect-ratio: 1/1;
+    margin: 5px;
+    cursor: pointer;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+}
+.non-active{
+    pointer-events: none;
+    transform: scale(0.95);
+    opacity: .5;
+}
+.alfabet>button:hover{
+    background-color: rgb(194, 194, 194);
+}
+.alfabet>button:active{
+    transform: scale(0.95);
+}
+
+/*KONIEC*/
+
+.result{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(177, 177, 177, 0.7);
+    z-index: 3;
+}
+.lose, .win{
+    animation: anim-result 2s linear infinite;
+}
+.win>h2, .lose>h2{
+    font-size: 3rem;
+}
+.lose>h3, .lose>h3>span{
+    font-size: 2.4rem;
+}
+.win>button, .lose>button{
+    border: 2px solid black;
+    font-size: 2.2rem;
+    background-color: transparent;
+    padding: 10px;
+    width: 250px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.lose{
+    display: none;
+    place-items: center;
+}
+.win{
+    display: none;
+    place-items: center;
+}
+
+
+@keyframes anim-poczatek{
+    0%{
+        transform: translate(-50%, -50%) scale(1);
+    }
+    50%{
+        transform: translate(-50%, -50%) scale(1.05);
+    }
+    100%{
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+@keyframes btn-out{
+    0%{
+        transform: translate(-50%, -50%) scale(1);
+    }
+    100%{
+        top: 0%;
+    }
+}
+@keyframes dane {
+    0%{
+        top: 100%
+    }
+    100%{
+        top: 50%;
+    }
+}
+
+@keyframes anim-result {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.05);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+@media screen and (max-width: 400px) {
+    body{
+        padding: 20px;
+        overflow: scroll;
+    }
+    .dane{
+        width: 250px;
+    }
+    .wisielec{
+        position: relative;
+        left: 0% !important;
+        top: 0%;
+        transform: translate(0%, 0%) scale(0.9);
+        z-index: -1;
+    }
+    .alfabet{
+        top: 0%;
+        left: 0%;
+        transform: translateX(0%) scale(.9);
+        position: relative;
+    }
+    .top{
+        margin-top: 0;
+    }
+    .top * {
+        font-size: 1.2rem;
+    }
+    .bledy *{
+        font-size: 1rem;
+    }
+    .haslo div{
+        width: 23px;
+        height: 20px;
+    }
+    .haslo-border{
+        border-bottom: 2px solid black;
+    }
+    .result *{
+        transform: scale(.55);
+    }
+    .lose>h3, .lose>h3>span{
+        text-align: center;
+        margin: -20px 0;
+    }
+}
