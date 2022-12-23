@@ -246,7 +246,6 @@ body{
     transform: translateY(-50%);
     border: none;
     display: none;
-    border: 2px solid;
     grid-template-columns: repeat(6, 1fr);
 }
 .alfabet>button{
