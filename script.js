@@ -28,6 +28,7 @@ function start_poczatek(){
 }
 
 function start(){
+    document.querySelector(".wisielec").classList.add("wisielec-resp");
     haslo = document.querySelector("#haslo").value;
     for(let i = 0; i < haslo.length; i++){
         if(haslo[i] == Number(haslo[i]) & haslo[i] != " "){
