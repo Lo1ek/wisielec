@@ -203,7 +203,6 @@ body{
 }
 .top h2{
     color: rgb(87, 87, 87);
-    
 }
 .top div{
     color: black;
@@ -370,10 +369,14 @@ body{
         top: 0%;
         left: 0%;
         transform: translateX(0%) scale(.9);
+        grid-template-columns: repeat(7, 1fr);
         position: relative;
     }
     .top{
-        margin-top: 0;
+        margin-top: 0px;
+    }
+    .top > div{
+        margin-top: 10px;
     }
     .top * {
         font-size: 1.2rem;
