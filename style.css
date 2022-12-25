@@ -379,9 +379,8 @@ body{
         margin-top: 0px;
     }
     .spacja{
-        background-color: red;
         width: 100% !important;
-        height: 0 !important;
+        height: 15px !important;
     }
     .top > div{
         margin-top: 10px;
