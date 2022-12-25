@@ -57,6 +57,7 @@ function start(){
                 const div = document.createElement("div");
                 document.querySelector(".haslo h2").appendChild(div);
                 div.setAttribute("id", `letter${i + 1}`);
+                div.classList.add("spacja");
                 pom5++;
             }else if(pom6 == 1){
                 const div = document.createElement("div");

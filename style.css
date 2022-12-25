@@ -201,7 +201,7 @@ body{
 .top > div{
     margin-top: 30px;
 }
-.top h2{
+.top h2, .haslo span{
     color: rgb(87, 87, 87);
 }
 .top div{
@@ -215,6 +215,9 @@ body{
 }
 .kategoria div{
     margin: 0 5px;
+}
+.haslo{
+    display: flex;
 }
 .haslo div{
     width: 30px;
@@ -374,6 +377,11 @@ body{
     }
     .top{
         margin-top: 0px;
+    }
+    .spacja{
+        background-color: red;
+        width: 100% !important;
+        height: 0 !important;
     }
     .top > div{
         margin-top: 10px;
