@@ -378,10 +378,6 @@ body{
     .top{
         margin-top: 0px;
     }
-    .spacja{
-        width: 100% !important;
-        height: 15px !important;
-    }
     .top > div{
         margin-top: 10px;
     }
